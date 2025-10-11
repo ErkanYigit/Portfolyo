@@ -18,7 +18,7 @@ import Input from '../components/ui/Input';
  * Filtreleme, arama ve proje listesi içerir
  */
 const Projects: React.FC = () => {
-  const { t, isTurkish } = useI18n();
+  const { isTurkish } = useI18n();
   const [filters, setFilters] = useState<ProjectFilter>({
     category: '',
     search: '',

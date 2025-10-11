@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Award, GraduationCap, Briefcase, Code, Heart } from 'lucide-react';
+import { Download, Award, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useI18n } from '../hooks/useI18n';
 import { personalInfo, experience, education, certifications } from '../data/personal';
@@ -15,7 +15,7 @@ import Badge from '../components/ui/Badge';
  * Kişisel bilgiler, deneyim, eğitim, beceriler ve sertifikalar içerir
  */
 const About: React.FC = () => {
-  const { t, isTurkish } = useI18n();
+  const { isTurkish } = useI18n();
 
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
@@ -121,7 +121,25 @@ const About: React.FC = () => {
               {experience.map((exp, index) => (
                 <motion.div
                   key={index}
-                  variants={fadeInUp}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{ once: true, margin: "-100px" }}
+                  variants={{
+                    initial: { 
+                      opacity: 0, 
+                      x: index % 2 === 0 ? -100 : 100,
+                      y: 20 
+                    },
+                    animate: { 
+                      opacity: 1, 
+                      x: 0,
+                      y: 0 
+                    }
+                  }}
+                  transition={{ 
+                    duration: 0.6,
+                    delay: index * 0.1
+                  }}
                   className="relative"
                 >
                   <Card className="relative">

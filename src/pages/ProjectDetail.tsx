@@ -24,7 +24,7 @@ import Badge from '../components/ui/Badge';
  */
 const ProjectDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { t, isTurkish } = useI18n();
+  const { isTurkish } = useI18n();
   const project = slug ? getProjectBySlug(slug) : null;
 
   // Proje bulunamazsa 404 sayfasına yönlendir

@@ -16,7 +16,7 @@ import Badge from '../components/ui/Badge';
  * Hero bölümü, öne çıkan projeler ve hakkımda özeti içerir
  */
 const Home: React.FC = () => {
-  const { t, isTurkish } = useI18n();
+  const { isTurkish } = useI18n();
   const featuredProjects = getFeaturedProjects().slice(0, 3);
 
   const fadeInUp = {

@@ -40,7 +40,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
  * İletişim formu, kişisel bilgiler ve sosyal medya linkleri içerir
  */
 const Contact: React.FC = () => {
-  const { t, isTurkish } = useI18n();
+  const { isTurkish } = useI18n();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 

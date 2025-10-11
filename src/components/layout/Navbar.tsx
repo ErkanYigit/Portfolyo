@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-  const { t, toggleLanguage, isTurkish } = useI18n();
+  const { toggleLanguage, isTurkish } = useI18n();
 
   // Scroll olayını dinle
   useEffect(() => {

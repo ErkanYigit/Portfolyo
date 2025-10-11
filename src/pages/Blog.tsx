@@ -25,7 +25,7 @@ import Input from '../components/ui/Input';
  * Blog yazıları, harici blog linkleri ve filtreleme içerir
  */
 const Blog: React.FC = () => {
-  const { t, isTurkish } = useI18n();
+  const { isTurkish } = useI18n();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTag, setSelectedTag] = useState('');
   const allTags = getAllTags();

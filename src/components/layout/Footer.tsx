@@ -17,7 +17,7 @@ import { socialLinks } from '../../data/socials';
  * Sosyal medya linkleri, site bilgileri ve telif hakkı içerir
  */
 const Footer: React.FC = () => {
-  const { t, isTurkish } = useI18n();
+  const { isTurkish } = useI18n();
 
   const getIcon = (iconName: string) => {
     const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
