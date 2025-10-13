@@ -138,7 +138,8 @@ export const projects: Project[] = [
     images: [
       '/images/projects/halisaha-1.jpg',
       '/images/projects/halisaha-2.jpg',
-      '/images/projects/halisaha-3.jpg'
+      '/images/projects/halisaha-3.jpg',
+      '/images/projects/halisaha-4.jpg',
     ],
     year: 2025,
     role: 'Full Stack Developer',
@@ -175,7 +176,10 @@ export const projects: Project[] = [
     images: [
       '/images/projects/mesai-1.jpg',
       '/images/projects/mesai-2.jpg',
-      '/images/projects/mesai-3.jpg'
+      '/images/projects/mesai-3.jpg',
+      '/images/projects/mesai-4.jpg',
+      '/images/projects/mesai-5.jpg',
+      '/images/projects/mesai-6.jpg',
     ],
     year: 2025,
     role: 'Full Stack Developer',
