@@ -150,6 +150,44 @@ const ProjectDetail: React.FC = () => {
         </Container>
       </Section>
 
+      {/* Proje Videosu */}
+      {project.videoUrl && (
+        <Section>
+          <Container>
+            <motion.div
+              initial="initial"
+              animate="animate"
+              variants={fadeInUp}
+              className="space-y-6"
+            >
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                {isTurkish ? 'Proje Videosu' : 'Project Video'}
+              </h2>
+              <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+                {project.videoUrl.startsWith('http') ? (
+                  <iframe
+                    src={project.videoUrl}
+                    title={project.title}
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                ) : (
+                  <video
+                    src={project.videoUrl}
+                    controls
+                    className="w-full h-full"
+                    poster={project.images?.[0]}
+                  >
+                    {isTurkish ? 'Tarayıcınız video oynatmayı desteklemiyor.' : 'Your browser does not support video playback.'}
+                  </video>
+                )}
+              </div>
+            </motion.div>
+          </Container>
+        </Section>
+      )}
+
       {/* Proje Görselleri */}
       {project.images && project.images.length > 0 && (
         <Section>

@@ -12,6 +12,7 @@ export type Project = {
   repoUrl?: string;
   liveUrl?: string;
   images?: string[]; // placeholder görseller
+  videoUrl?: string; // demo/tanıtım videosu
   year?: number;
   role?: string; // Solo / Team Lead / Contributor
   featured?: boolean; // öne çıkan proje

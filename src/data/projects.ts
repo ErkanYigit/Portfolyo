@@ -54,15 +54,59 @@ export const projects: Project[] = [
   },
   {
     id: 'web-09',
-    title: 'FurniCatalog & StockApp',
+    title: 'FurniCatalog',
     slug: 'furni-catalog',
     description:
-      'Bir koltuk/oturma grubu firması için ürün kataloğu (mağaza vitrini) ve web tabanlı stok takip/güncelleme sistemi. Katalogda kategori/renk/doku filtreleri, varyantlar ve favorilere ekleme; yönetim panelinde stok güncelleme, toplu içe/dışa aktarım ve temel raporlama bulunur.',
+      'Mobilya markası için modern ve kullanıcı dostu dijital ürün kataloğu. Müşterilerin ürünleri keşfetmesi, filtrelemesi ve favori listesi oluşturması için tasarlanmış şık bir vitrin uygulaması. Mağaza bilgileri, koleksiyonlar ve iletişim bilgilerini içerir.',
     descriptionEn:
-      'Product catalog (storefront) and web-based stock tracking/updating for a furniture brand; variants, filters and basic reporting.',
+      'Modern and user-friendly digital product catalog for a furniture brand. An elegant showcase application designed for customers to discover products, filter, and create wishlists. Includes store information, collections, and contact details.',
     tech: [
       'React',
       'Vite',
+      'TypeScript',
+      'TailwindCSS',
+      'React Router',
+      'Zustand'
+    ],
+    category: 'web',
+    highlights: [
+      'Zengin ürün detayları ve varyant (renk/kumaş) seçenekleri',
+      'Gelişmiş filtreleme ve arama özellikleri',
+      'Mobil uyumlu, performans odaklı tasarım',
+      'Favori listesi oluşturma ve paylaşma',
+      'Koleksiyon bazlı ürün gruplandırma',
+      'Mağaza konum ve iletişim entegrasyonu'
+    ],
+    highlightsEn: [
+      'Rich product details and variant options',
+      'Advanced filtering and search capabilities',
+      'Mobile-responsive, performance-focused design',
+      'Wishlist creation and sharing',
+      'Collection-based product grouping',
+      'Store location and contact integration'
+    ],
+    repoUrl: 'https://github.com/ErkanYigit/furni-catalog',
+    liveUrl: undefined,
+    videoUrl: '/videos/katalogvid.mp4',
+    images: [
+      '/images/projects/furni-catalog-1.jpg',
+      '/images/projects/furni-catalog-2.jpg',
+      '/images/projects/furni-catalog-3.jpg',
+    ],
+    year: 2025,
+    role: 'Frontend Developer',
+    featured: true
+  },
+  {
+    id: 'web-10',
+    title: 'FurniStock',
+    slug: 'furni-stock',
+    description:
+      'Mobilya üreticileri için üretimden teslimata kadar tüm süreçleri yönetebilecekleri ücretsiz, güvenli ve şık bir otomasyon sistemi. Modüler yapısı ile işletmenin ihtiyaçlarına göre özelleştirilebilir ve genişletilebilir.',
+    descriptionEn:
+      'A free, secure, and elegant automation system for furniture manufacturers to manage all processes from production to delivery. Customizable and expandable with its modular structure according to business needs.',
+    tech: [
+      'React',
       'TypeScript',
       'TailwindCSS',
       'React Router',
@@ -73,27 +117,29 @@ export const projects: Project[] = [
     ],
     category: 'web',
     highlights: [
-      'Varyant (renk/kumaş) destekli ürün kataloğu ve hızlı filtreleme',
-      'Mobil uyumlu, performans odaklı vitrin sayfaları',
-      'Yönetim panelinden anlık stok güncelleme ve log kaydı',
-      'CSV/Excel ile toplu ürün & stok içe/dışa aktarım',
-      'Rol bazlı erişim (admin/editor) ve aktivite geçmişi',
-      'Basit raporlama: en çok görüntülenen ürünler, düşük stok uyarıları'
+      'Üretim planlama ve takip sistemi',
+      'Stok ve depo yönetimi',
+      'Sipariş takibi ve teslimat yönetimi',
+      'Toplu veri içe/dışa aktarım (CSV/Excel)',
+      'Rol bazlı erişim ve detaylı log kaydı',
+      'Kapsamlı raporlama ve analiz araçları',
+      'Modüler ve genişletilebilir mimari',
+      'Kullanıcı dostu arayüz tasarımı'
     ],
     highlightsEn: [
-      'Variant-enabled catalog with fast filters',
-      'Responsive, performance-focused storefront',
-      'Instant stock updates with audit logs',
-      'Bulk product/stock import-export (CSV/Excel)',
-      'Role-based access (admin/editor) and activity history',
-      'Basic analytics: top views, low-stock alerts'
+      'Production planning and tracking system',
+      'Inventory and warehouse management',
+      'Order tracking and delivery management',
+      'Bulk data import/export (CSV/Excel)',
+      'Role-based access and detailed logging',
+      'Comprehensive reporting and analytics',
+      'Modular and extensible architecture',
+      'User-friendly interface design'
     ],
-    repoUrl: 'https://github.com/ErkanYigit/furni-catalog',
+    repoUrl: 'https://github.com/ErkanYigit/furni-stock',
     liveUrl: undefined,
+    videoUrl: '/videos/otomasyonvid.mp4',
     images: [
-      '/images/projects/furni-catalog-1.jpg',
-      '/images/projects/furni-catalog-2.jpg',
-      '/images/projects/furni-catalog-3.jpg',
       '/images/projects/furni-catalog-4.jpg',
       '/images/projects/furni-catalog-5.jpg',
       '/images/projects/furni-catalog-6.jpg',
