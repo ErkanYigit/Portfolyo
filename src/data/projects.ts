@@ -138,7 +138,7 @@ export const projects: Project[] = [
     ],
     repoUrl: 'https://github.com/ErkanYigit/furni-stock',
     liveUrl: undefined,
-    videoUrl: '/videos/otomasyonvid.mp4',
+    videoUrl: '/videos/otomasyonvid2.mp4',
     images: [
       '/images/projects/furni-catalog-4.jpg',
       '/images/projects/furni-catalog-5.jpg',
