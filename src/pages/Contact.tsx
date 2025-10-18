@@ -68,10 +68,10 @@ const Contact: React.FC = () => {
       };
 
       await emailjs.send(
-        'service_your_service_id', // EmailJS Service ID
-        'template_your_template_id', // EmailJS Template ID
+        'service_8rwpr3f', // EmailJS Service ID
+        'template_lckpcb5', // EmailJS Template ID
         templateParams,
-        'your_public_key' // EmailJS Public Key
+        'jVHmwRt84ZlUI2uT5' // EmailJS Public Key
       );
       
       setSubmitStatus('success');
