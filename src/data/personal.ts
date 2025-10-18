@@ -136,24 +136,24 @@ export const education = [
 
 export const certifications = [
   {
-    name: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: '2023',
-    credentialId: 'AWS-SAA-123456',
-    url: 'https://aws.amazon.com/verification'
+    name: 'Bilgisayar Mühendisliği',
+    issuer: 'Hitit Üniversitesi',
+    date: '2021-2025',
+    credentialId: 'BSc-CS-2025',
+    url: 'https://www.hitit.edu.tr'
   },
   {
-    name: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
-    date: '2023',
-    credentialId: 'GCP-PD-789012',
-    url: 'https://cloud.google.com/certification'
+    name: 'Build Your First React Website',
+    issuer: 'Coursera Project Network',
+    date: '2024',
+    credentialId: 'REACT-COURSERA-2024',
+    url: 'https://www.coursera.org'
   },
   {
-    name: 'React Developer Certification',
-    issuer: 'Meta',
-    date: '2022',
-    credentialId: 'META-REACT-345678',
-    url: 'https://www.meta.com/certifications'
+    name: 'Üretken Yapay Zeka Temelleri: Genel Bakış ve Etki',
+    issuer: 'University of Michigan',
+    date: '2024',
+    credentialId: 'AI-MICH-2024',
+    url: 'https://www.umich.edu'
   }
 ];
