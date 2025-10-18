@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from '@emailjs/browser';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { 
@@ -59,11 +60,19 @@ const Contact: React.FC = () => {
     setSubmitStatus('idle');
 
     try {
-      // Simüle edilmiş API çağrısı
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      // Gerçek uygulamada burada EmailJS, Formspree veya başka bir servis kullanılabilir
-      console.log('Form verileri:', data);
+      const templateParams = {
+        from_name: data.name,
+        from_email: data.email,
+        subject: data.subject,
+        message: data.message
+      };
+
+      await emailjs.send(
+        'service_your_service_id', // EmailJS Service ID
+        'template_your_template_id', // EmailJS Template ID
+        templateParams,
+        'your_public_key' // EmailJS Public Key
+      );
       
       setSubmitStatus('success');
       reset();
@@ -293,7 +302,7 @@ const Contact: React.FC = () => {
 
                 <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                   <p className="text-sm text-gray-600 dark:text-gray-300">
-                    <strong>{isTurkish ? 'Not:' : 'Note:'}</strong> {isTurkish ? 'Bu form şu anda demo amaçlıdır. Gerçek uygulamada EmailJS, Formspree veya benzeri bir servis kullanılarak e-posta gönderimi sağlanabilir. Form verileri konsola yazdırılmaktadır.' : 'This form is currently for demo purposes. In a real application, email sending can be provided using a service like EmailJS, Formspree, or similar. Form data is written to the console.'}
+                    <strong>{isTurkish ? 'Not:' : 'Note:'}</strong> {isTurkish ? 'Mesajınız doğrudan e-posta kutuma iletilecektir. En kısa sürede size geri dönüş yapacağım.' : 'Your message will be sent directly to my inbox. I will get back to you as soon as possible.'}
                   </p>
                 </div>
               </Card>

@@ -119,22 +119,27 @@ export const experience = [
 
 export const education = [
   {
+    degree: 'Lise Sertifikası',
+    school: 'Nuh Mehmet Küçükçalık Anadolu Lisesi',
+    period: '2019',
+  },
+  {
     degree: 'Bilgisayar Mühendisliği',
     school: 'Hitit Üniversitesi',
     period: '2021 - 2025',
-    description: 'Yazılım mühendisliği, veri yapıları ve algoritmalar üzerine eğitim.',
     
-  },
-  {
-    degree: 'Yapay Zeka Sertifikası',
-    school: 'Coursera - Stanford University',
-    period: '2023',
-    description: 'Machine Learning ve Deep Learning konularında uzmanlaşma.',
-    gpa: 'A+'
   }
+ 
 ];
 
 export const certifications = [
+  {
+    name: 'Build Your First React Website',
+    issuer: 'Coursera Project Network',
+    date: '2025',
+    credentialId: 'YUC22JGDY92Y',
+    url: 'https://www.coursera.org/account/accomplishments/verify/YUC22JGDY92Y'
+  },
   {
     name: 'Bilgisayar Mühendisliği',
     issuer: 'Hitit Üniversitesi',
@@ -142,18 +147,12 @@ export const certifications = [
     credentialId: 'BSc-CS-2025',
     url: 'https://www.hitit.edu.tr'
   },
-  {
-    name: 'Build Your First React Website',
-    issuer: 'Coursera Project Network',
-    date: '2024',
-    credentialId: 'REACT-COURSERA-2024',
-    url: 'https://www.coursera.org'
-  },
+
   {
     name: 'Üretken Yapay Zeka Temelleri: Genel Bakış ve Etki',
     issuer: 'University of Michigan',
-    date: '2024',
-    credentialId: 'AI-MICH-2024',
-    url: 'https://www.umich.edu'
+    date: '2025',
+    credentialId: '7DE3HNTKGBJC',
+    url: 'https://www.coursera.org/account/accomplishments/verify/7DE3HNTKGBJC'
   }
 ];
