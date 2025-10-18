@@ -61,10 +61,11 @@ const Contact: React.FC = () => {
 
     try {
       const templateParams = {
-        from_name: data.name,
-        from_email: data.email,
+        user_name: data.name,
+        user_email: data.email,
         subject: data.subject,
-        message: data.message
+        message: data.message,
+        to_name: 'Erkan Yılmaz'
       };
 
       await emailjs.send(
