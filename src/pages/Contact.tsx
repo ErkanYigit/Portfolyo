@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
 
       await emailjs.send(
         'service_8rwpr3f', // EmailJS Service ID
-        'template_lckpcb5', // EmailJS Template ID
+        'template_w1pfban', // EmailJS Template ID
         templateParams,
         'jVHmwRt84ZlUI2uT5' // EmailJS Public Key
       );
