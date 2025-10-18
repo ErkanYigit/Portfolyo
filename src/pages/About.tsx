@@ -220,12 +220,14 @@ const About: React.FC = () => {
                         <p className="text-sm text-gray-700 dark:text-gray-200 mb-2">
                           {edu.period}
                         </p>
-                        <p className="text-gray-700 dark:text-gray-200 text-sm mb-2">
-                          {edu.description}
-                        </p>
-                        {edu.gpa && (
+                        {(edu as any).description && (
+                          <p className="text-gray-700 dark:text-gray-200 text-sm mb-2">
+                            {(edu as any).description}
+                          </p>
+                        )}
+                        {(edu as any).gpa && (
                           <Badge variant="primary" size="sm">
-                            GPA: {edu.gpa}
+                            GPA: {(edu as any).gpa}
                           </Badge>
                         )}
                       </div>
