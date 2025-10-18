@@ -21,8 +21,26 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: 'Portfolio',
-    url: 'https://erkan.dev',
+    url: 'https://erkan.vercel.app',
     icon: 'globe',
     color: '#6366F1'
-  }
+  },
+  // {
+  //   name: 'Twitter',
+  //   url: 'https://twitter.com/example',
+  //   icon: 'twitter',
+  //   color: '#1DA1F2'
+  // },
+  // {
+  //   name: 'Medium',
+  //   url: 'https://medium.com/@example',
+  //   icon: 'book-open',
+  //   color: '#00AB6C'
+  // },
+  // {
+  //   name: 'Dev.to',
+  //   url: 'https://dev.to/example',
+  //   icon: 'code',
+  //   color: '#0A0A0A'
+  // },
 ];

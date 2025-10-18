@@ -180,6 +180,7 @@ export const projects: Project[] = [
       'Notifications/reminders and simple rating/comments'
     ],
     repoUrl: 'https://github.com/ErkanYigit/halisaha-randevu',
+    videoUrl: '/videos/halisahav2.mp4',
     liveUrl: undefined,
     images: [
       '/images/projects/halisaha-1.jpg',
