@@ -205,12 +205,12 @@ const ProjectDetail: React.FC = () => {
                 {project.images.map((image, index) => (
                   <div
                     key={index}
-                    className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden"
+                    className={`${project.slug === 'mesai' ? '' : 'aspect-video'} bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden`}
                   >
                     <img
                       src={image}
                       alt={`${project.title} - Görsel ${index + 1}`}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className={`w-full ${project.slug === 'mesai' ? 'h-auto object-contain bg-black/5 dark:bg-white/5' : 'h-full object-cover hover:scale-105 transition-transform duration-300'}`}
                     />
                   </div>
                 ))}

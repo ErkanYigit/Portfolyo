@@ -98,6 +98,48 @@ export const projects: Project[] = [
     featured: true
   },
   {
+    id: 'web-11',
+    title: 'Halısaha Randevu',
+    slug: 'halisaha-randevu',
+    description:
+      'Kullanıcının konumuna en yakın halısahaları listeleyen, filtreleyip uygun saatlerde randevu almayı sağlayan; takım/kadro kurma ve eksik oyuncu ya da rakip arama ilanı paylaşma özelliklerine sahip modern web uygulaması.',
+    descriptionEn:
+      'Modern web app to find nearby pitches, filter by availability and book; create squads, post missing-player or opponent requests.',
+    tech: [
+      'React', 'TypeScript', 'Vite', 'TailwindCSS', 'React Router', 'Zustand',
+      'Node.js', 'Express', 'MongoDB', 'GeoJSON', 'Leaflet/Mapbox', 'JWT'
+    ],
+    category: 'web',
+    highlights: [
+      'Konuma göre en yakın sahaları listeleme (coğrafi sorgular)',
+      'Tarih/saat, zemin, fiyat, ışıklandırma vb. filtreleme',
+      'Randevu alma ve rezervasyon yönetimi',
+      'Kadro kurma, eksik oyuncu/rakip ilanı oluşturma',
+      'Harita üzerinde sahaları ve uygunluk durumlarını görselleştirme',
+      'Bildirim/hatırlatma ve basit puanlama/yorum sistemi'
+    ],
+    highlightsEn: [
+      'Nearest pitches by location (geo queries)',
+      'Filter by date/time, surface, price, lighting, etc.',
+      'Booking and reservation management',
+      'Create squads; post missing player/opponent listings',
+      'Map visuals for pitches and availability',
+      'Notifications/reminders and simple rating/comments'
+    ],
+    repoUrl: 'https://github.com/ErkanYigit/halisaha-randevu',
+    videoUrl: '/videos/halisaha.mp4',
+    liveUrl: undefined,
+    images: [
+      '/images/projects/halisaha-1.jpg',
+      '/images/projects/halisaha-2.jpg',
+      '/images/projects/halisaha-3.jpg',
+      '/images/projects/halisaha-4.jpg',
+    ],
+    year: 2025,
+    role: 'Full Stack Developer',
+    featured: true
+  },
+  {
     id: 'web-10',
     title: 'FurniStock',
     slug: 'furni-stock',
@@ -145,48 +187,6 @@ export const projects: Project[] = [
       '/images/projects/furni-catalog-6.jpg',
       '/images/projects/furni-catalog-7.jpg',
       '/images/projects/furni-catalog-8.jpg'
-    ],
-    year: 2025,
-    role: 'Full Stack Developer',
-    featured: true
-  },
-  {
-    id: 'web-11',
-    title: 'Halısaha Randevu',
-    slug: 'halisaha-randevu',
-    description:
-      'Kullanıcının konumuna en yakın halısahaları listeleyen, filtreleyip uygun saatlerde randevu almayı sağlayan; takım/kadro kurma ve eksik oyuncu ya da rakip arama ilanı paylaşma özelliklerine sahip modern web uygulaması.',
-    descriptionEn:
-      'Modern web app to find nearby pitches, filter by availability and book; create squads, post missing-player or opponent requests.',
-    tech: [
-      'React', 'TypeScript', 'Vite', 'TailwindCSS', 'React Router', 'Zustand',
-      'Node.js', 'Express', 'MongoDB', 'GeoJSON', 'Leaflet/Mapbox', 'JWT'
-    ],
-    category: 'web',
-    highlights: [
-      'Konuma göre en yakın sahaları listeleme (coğrafi sorgular)',
-      'Tarih/saat, zemin, fiyat, ışıklandırma vb. filtreleme',
-      'Randevu alma ve rezervasyon yönetimi',
-      'Kadro kurma, eksik oyuncu/rakip ilanı oluşturma',
-      'Harita üzerinde sahaları ve uygunluk durumlarını görselleştirme',
-      'Bildirim/hatırlatma ve basit puanlama/yorum sistemi'
-    ],
-    highlightsEn: [
-      'Nearest pitches by location (geo queries)',
-      'Filter by date/time, surface, price, lighting, etc.',
-      'Booking and reservation management',
-      'Create squads; post missing player/opponent listings',
-      'Map visuals for pitches and availability',
-      'Notifications/reminders and simple rating/comments'
-    ],
-    repoUrl: 'https://github.com/ErkanYigit/halisaha-randevu',
-    videoUrl: '/videos/halisahav2.mp4',
-    liveUrl: undefined,
-    images: [
-      '/images/projects/halisaha-1.jpg',
-      '/images/projects/halisaha-2.jpg',
-      '/images/projects/halisaha-3.jpg',
-      '/images/projects/halisaha-4.jpg',
     ],
     year: 2025,
     role: 'Full Stack Developer',
