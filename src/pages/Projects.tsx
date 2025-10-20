@@ -266,11 +266,11 @@ const Projects: React.FC = () => {
                 >
                   <Card className="h-full">
                     {/* Proje Görseli */}
-                    <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-lg mb-4 overflow-hidden">
+                    <div className={`${project.category === 'mobile' ? 'aspect-[9/16]' : 'aspect-video'} bg-gray-200 dark:bg-gray-700 rounded-lg mb-4 overflow-hidden`}>
                       <img
                         src={project.images?.[0]}
                         alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className={`w-full h-full ${project.category === 'mobile' ? 'object-contain bg-black/5 dark:bg-white/5' : 'object-cover group-hover:scale-105 transition-transform duration-300'}`}
                       />
                     </div>
 
