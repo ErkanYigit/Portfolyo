@@ -65,7 +65,7 @@ const ProjectDetail: React.FC = () => {
               className="group"
             >
               <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-              Projelere Dön
+              {isTurkish ? 'Projelere Dön' : 'Back to Projects'}
             </Button>
 
             {/* Proje Başlığı ve Kategori */}
@@ -80,7 +80,7 @@ const ProjectDetail: React.FC = () => {
                   </Badge>
                   {project.featured && (
                     <Badge variant="success" size="lg">
-                      Öne Çıkan
+                      {isTurkish ? 'Öne Çıkan' : 'Featured'}
                     </Badge>
                   )}
                 </div>
@@ -199,7 +199,7 @@ const ProjectDetail: React.FC = () => {
               className="space-y-6"
             >
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                Proje Görselleri
+                {isTurkish ? 'Proje Görselleri' : 'Project Images'}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {project.images.map((image, index) => (
@@ -209,7 +209,7 @@ const ProjectDetail: React.FC = () => {
                   >
                     <img
                       src={image}
-                      alt={`${project.title} - Görsel ${index + 1}`}
+                      alt={`${project.title} - ${isTurkish ? 'Görsel' : 'Image'} ${index + 1}`}
                       className={`w-full ${project.slug === 'mesai' ? 'h-auto object-contain bg-black/5 dark:bg-white/5' : 'h-full object-cover hover:scale-105 transition-transform duration-300'}`}
                     />
                   </div>
@@ -234,7 +234,7 @@ const ProjectDetail: React.FC = () => {
               {/* Proje Özellikleri */}
               <Card>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  Proje Özellikleri
+                  {isTurkish ? 'Proje Özellikleri' : 'Project Features'}
                 </h3>
                 <ul className="space-y-3">
                   {(isTurkish ? project.highlights : ((project as any).highlightsEn || project.highlights)).map((highlight: string, index: number) => (
@@ -251,16 +251,17 @@ const ProjectDetail: React.FC = () => {
               {/* Proje Açıklaması */}
               <Card>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  Proje Hakkında
+                  {isTurkish ? 'Proje Hakkında' : 'About Project'}
                 </h3>
                 <div className="prose prose-gray dark:prose-invert max-w-none">
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    {project.description}
+                    {isTurkish ? project.description : (project as any).descriptionEn || project.description}
                   </p>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
-                    Bu proje, modern web teknolojileri kullanılarak geliştirilmiş olup, 
-                    kullanıcı deneyimini ön planda tutan bir yaklaşımla tasarlanmıştır. 
-                    Proje sürecinde en güncel teknolojiler ve en iyi uygulamalar kullanılmıştır.
+                    {isTurkish 
+                      ? 'Bu proje, modern web teknolojileri kullanılarak geliştirilmiş olup, kullanıcı deneyimini ön planda tutan bir yaklaşımla tasarlanmıştır. Proje sürecinde en güncel teknolojiler ve en iyi uygulamalar kullanılmıştır.'
+                      : 'This project was developed using modern web technologies and designed with a user experience-focused approach. The latest technologies and best practices were used throughout the project process.'
+                    }
                   </p>
                 </div>
               </Card>
@@ -276,7 +277,7 @@ const ProjectDetail: React.FC = () => {
               {/* Kullanılan Teknolojiler */}
               <Card>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  Kullanılan Teknolojiler
+                  {isTurkish ? 'Kullanılan Teknolojiler' : 'Technologies Used'}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
@@ -290,32 +291,32 @@ const ProjectDetail: React.FC = () => {
               {/* Proje Bilgileri */}
               <Card>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  Proje Bilgileri
+                  {isTurkish ? 'Proje Bilgileri' : 'Project Information'}
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-300">Kategori:</span>
+                    <span className="text-gray-600 dark:text-gray-300">{isTurkish ? 'Kategori:' : 'Category:'}</span>
                     <Badge variant="primary" size="sm">
-                      {project.category === 'web' ? 'Web' :
-                       project.category === 'mobile' ? 'Mobil' :
+                      {project.category === 'web' ? (isTurkish ? 'Web' : 'Web') :
+                       project.category === 'mobile' ? (isTurkish ? 'Mobil' : 'Mobile') :
                        project.category === 'ai-ml' ? 'AI/ML' :
                        project.category === 'iot' ? 'IoT' : project.category}
                     </Badge>
                   </div>
                   {project.year && (
                     <div className="flex justify-between">
-                      <span className="text-gray-600 dark:text-gray-300">Yıl:</span>
+                      <span className="text-gray-600 dark:text-gray-300">{isTurkish ? 'Yıl:' : 'Year:'}</span>
                       <span className="text-gray-900 dark:text-white">{project.year}</span>
                     </div>
                   )}
                   {project.role && (
                     <div className="flex justify-between">
-                      <span className="text-gray-600 dark:text-gray-300">Rol:</span>
+                      <span className="text-gray-600 dark:text-gray-300">{isTurkish ? 'Rol:' : 'Role:'}</span>
                       <span className="text-gray-900 dark:text-white">{project.role}</span>
                     </div>
                   )}
                   <div className="flex justify-between">
-                    <span className="text-gray-600 dark:text-gray-300">Teknoloji Sayısı:</span>
+                    <span className="text-gray-600 dark:text-gray-300">{isTurkish ? 'Teknoloji Sayısı:' : 'Technologies:'}</span>
                     <span className="text-gray-900 dark:text-white">{project.tech.length}</span>
                   </div>
                 </div>
@@ -324,7 +325,7 @@ const ProjectDetail: React.FC = () => {
               {/* Bağlantılar */}
               <Card>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                  Bağlantılar
+                  {isTurkish ? 'Bağlantılar' : 'Links'}
                 </h3>
                 <div className="space-y-3">
                   {project.liveUrl && (
@@ -338,7 +339,7 @@ const ProjectDetail: React.FC = () => {
                       className="w-full justify-center group"
                     >
                       <ExternalLink className="mr-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      Canlı Demo
+                      {isTurkish ? 'Canlı Demo' : 'Live Demo'}
                     </Button>
                   )}
                   {project.repoUrl && (
@@ -352,7 +353,7 @@ const ProjectDetail: React.FC = () => {
                       className="w-full justify-center group"
                     >
                       <Github className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                      Kaynak Kod
+                      {isTurkish ? 'Kaynak Kod' : 'Source Code'}
                     </Button>
                   )}
                 </div>
