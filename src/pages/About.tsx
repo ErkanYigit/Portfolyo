@@ -327,7 +327,7 @@ const About: React.FC = () => {
                 {isTurkish ? 'Sertifikalar' : 'Certifications'}
               </h2>
               <p className="text-xl text-gray-700 dark:text-gray-200 max-w-2xl mx-auto">
-                Aldığım sertifikalar ve profesyonel gelişim belgelerim
+                {isTurkish ? 'Aldığım sertifikalar ve profesyonel gelişim belgelerim' : 'My certifications and professional development credentials'}
               </p>
             </div>
 
@@ -346,7 +346,7 @@ const About: React.FC = () => {
                       </div>
                       <div className="flex-1">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                          {cert.name}
+                          {isTurkish ? cert.name : ((cert as any).nameEn || cert.name)}
                         </h3>
                         <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
                           {cert.issuer}
@@ -366,7 +366,7 @@ const About: React.FC = () => {
                           size="sm"
                           className="w-full"
                         >
-                          Doğrula
+                          {isTurkish ? 'Doğrula' : 'Verify'}
                         </Button>
                       </div>
                     </div>

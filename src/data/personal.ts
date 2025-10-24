@@ -134,25 +134,43 @@ export const education = [
 
 export const certifications = [
   {
-    name: 'Build Your First React Website',
-    issuer: 'Coursera Project Network',
-    date: '2025',
-    credentialId: 'YUC22JGDY92Y',
-    url: 'https://www.coursera.org/account/accomplishments/verify/YUC22JGDY92Y'
-  },
-  {
     name: 'Bilgisayar Mühendisliği',
+    nameEn: 'Computer Engineering',
     issuer: 'Hitit Üniversitesi',
     date: '2021-2025',
     credentialId: 'BSc-CS-2025',
     url: 'https://www.hitit.edu.tr'
   },
-
+  {
+    name: 'Introduction to AI',
+    nameEn: 'Introduction to AI',
+    issuer: 'GOOGLE',
+    date: '2025',
+    credentialId: '7DE3HNTKGBJC',
+    url: 'https://www.coursera.org/account/accomplishments/verify/M1GJLH5WQLZ6'
+  },
+  {
+    name: 'Introduction to Software Engineering',
+    nameEn: 'Introduction to Software Engineering',
+    issuer: 'IBM',
+    date: '2025',
+    credentialId: 'G3OHDOWNYC23',
+    url: 'https://www.coursera.org/account/accomplishments/verify/G3OHDOWNYC23'
+  },
   {
     name: 'Üretken Yapay Zeka Temelleri: Genel Bakış ve Etki',
+    nameEn: 'Generative AI Fundamentals: Overview and Impact',
     issuer: 'University of Michigan',
     date: '2025',
     credentialId: '7DE3HNTKGBJC',
     url: 'https://www.coursera.org/account/accomplishments/verify/7DE3HNTKGBJC'
-  }
+  },
+  {
+    name: 'Build Your First React Website',
+    nameEn: 'Build Your First React Website',
+    issuer: 'Coursera Project Network',
+    date: '2025',
+    credentialId: 'YUC22JGDY92Y',
+    url: 'https://www.coursera.org/account/accomplishments/verify/YUC22JGDY92Y'
+  },
 ];
