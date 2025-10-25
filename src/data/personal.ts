@@ -120,12 +120,16 @@ export const experience = [
 export const education = [
   {
     degree: 'Lise Sertifikası',
+    degreeEn: 'High School Diploma',
     school: 'Nuh Mehmet Küçükçalık Anadolu Lisesi',
+    schoolEn: 'Nuh Mehmet Küçükçalık Anatolian High School',
     period: '2019',
   },
   {
     degree: 'Bilgisayar Mühendisliği',
+    degreeEn: 'Computer Engineering',
     school: 'Hitit Üniversitesi',
+    schoolEn: 'Hitit University',
     period: '2021 - 2025',
     
   }

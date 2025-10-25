@@ -212,10 +212,10 @@ const About: React.FC = () => {
                       </div>
                       <div className="flex-1">
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">
-                          {edu.degree}
+                          {isTurkish ? edu.degree : ((edu as any).degreeEn || edu.degree)}
                         </h3>
                         <p className="text-primary-600 dark:text-primary-400 font-medium mb-2">
-                          {edu.school}
+                          {isTurkish ? edu.school : ((edu as any).schoolEn || edu.school)}
                         </p>
                         <p className="text-sm text-gray-700 dark:text-gray-200 mb-2">
                           {edu.period}
