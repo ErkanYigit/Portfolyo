@@ -146,6 +146,14 @@ export const certifications = [
     url: 'https://www.hitit.edu.tr'
   },
   {
+    name: 'React Basics',
+    nameEn: 'React Basics',
+    issuer: 'META',
+    date: '2025',
+    credentialId: 'YICAWI3UHW4M',
+    url: 'https://www.coursera.org/account/accomplishments/verify/YICAWI3UHW4M'
+  },
+  {
     name: 'Introduction to AI',
     nameEn: 'Introduction to AI',
     issuer: 'GOOGLE',
