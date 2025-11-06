@@ -10,7 +10,7 @@ export const personalInfo = {
   phone: '+90 507 206 05 25',
   location: 'Bursa, Türkiye',
   website: 'https://erkan.dev',
-  avatar: 'https://media.licdn.com/dms/image/v2/D4D03AQHyphW0tkxYHg/profile-displayphoto-crop_800_800/B4DZmxOM4pG8AI-/0/1759614914681?e=1762387200&v=beta&t=-6NyW4z18_tAGGKqXUu8QWAU7srmX0lY6pqY0M54jvo', // Kendi fotoğrafınızı public/images/ klasörüne koyun
+  avatar: '/images/avatar.png', // Kendi fotoğrafınızı public/images/ klasörüne koyun
   resume: '/documents/Erkan_Yigit_Cv_Eng.pdf', // Kendi CV'nizi public/documents/ klasörüne koyun
   yearsOfExperience: 5,
   projectsCompleted: 25,
