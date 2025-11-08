@@ -280,7 +280,108 @@ export const projects: Project[] = [
     year: 2025,
     role: 'ML Engineer & Full Stack Developer',
     featured: false
-  }
+  },
+  {
+  id: 'web-12',
+  title: 'Teklif V2 Tedarik Platformu',
+  slug: 'teklif-v2',
+  description:
+    'Satınalma ekiplerinin tedarikçilerden teklif toplama, stok ve fiyat analizlerini yönetme, onay süreçlerini uçtan uca takip etme ihtiyaçlarını tek ekran üzerinden karşılayan kurumsal web uygulaması.',
+  descriptionEn:
+    'Enterprise procurement platform that unifies vendor quote collection, stock and pricing analytics, and approval workflows within a single web experience.',
+  tech: [
+    'Angular 20',
+    'TypeScript',
+    'DevExtreme',
+    'RxJS',
+    'Angular SSR',
+    'ASP.NET Core 8',
+    'Entity Framework Core',
+    'SQL Server',
+    'JWT Authentication'
+  ],
+  category: 'web',
+  highlights: [
+    'Teklif, tedarikçi ve ürün satırlarını aynı ekranda yönetme, çoklu tedarikçi karşılaştırma',
+    'Cari, stok, fiyat ve tedarikçi verilerini ilişkilendirip CariStok matrisiyle izleme',
+    'Role dayalı kimlik doğrulama ve JWT ile korunan teklif onay akışları',
+    'DevExtreme gridleri üzerinden gelişmiş filtreleme, sıralama ve dışa aktarma',
+    'Stok ve teklif verisini EF Core migrasyonlarıyla izlenebilir şekilde versiyonlama',
+    'Angular SSR + Express ile hızlı ilk yükleme ve güvenli API katmanı'
+  ],
+  highlightsEn: [
+    'Manage quotes, suppliers, and line items together with multi-vendor comparison',
+    'Link customer, stock, pricing, and supplier data via the CariStok matrix',
+    'Role-based authentication with JWT-protected approval workflows',
+    'Advanced filtering, sorting, and export powered by DevExtreme grids',
+    'Versioned data model via Entity Framework Core migrations',
+    'Fast first paint through Angular SSR and a secured ASP.NET Core API layer'
+  ],
+  repoUrl: 'https://github.com/ErkanYigit/TeklifApp',
+  videoUrl: '/videos/teklif-v2.mp4',
+  liveUrl: undefined,
+  images: [
+    '/images/projects/teklif-v2-1.jpg',
+    '/images/projects/teklif-v2-2.jpg',
+    '/images/projects/teklif-v2-3.jpg',
+    '/images/projects/teklif-v2-4.jpg'
+  ],
+  year: 2025,
+  role: 'Full Stack Developer',
+  featured: true
+},
+{
+  id: 'web-12',
+  title: 'Teklif Tedarik Platformu',
+  slug: 'teklif-v2',
+  description:
+    'Satınalma ekiplerinin tedarikçilerden teklif toplama, stok ve fiyat analizlerini yönetme, onay süreçlerini uçtan uca takip etme ihtiyaçlarını tek ekran üzerinden karşılayan kurumsal web uygulaması.',
+  descriptionEn:
+    'Enterprise procurement platform that unifies vendor quote collection, stock and pricing analytics, and approval workflows within a single web experience.',
+  tech: [
+    'Angular 20',
+    'TypeScript',
+    'DevExtreme',
+    'RxJS',
+    'Angular SSR',
+    'ASP.NET Core 8',
+    'Entity Framework Core',
+    'SQL Server',
+    'JWT Authentication'
+  ],
+  category: 'web',
+  highlights: [
+    'Teklif, tedarikçi ve ürün satırlarını aynı ekranda yönetme, çoklu tedarikçi karşılaştırma',
+    'Cari, stok, fiyat ve tedarikçi verilerini ilişkilendirip CariStok matrisiyle izleme',
+    'Role dayalı kimlik doğrulama ve JWT ile korunan teklif onay akışları',
+    'DevExtreme gridleri üzerinden gelişmiş filtreleme, sıralama ve dışa aktarma',
+    'Stok ve teklif verisini EF Core migrasyonlarıyla izlenebilir şekilde versiyonlama',
+    'Angular SSR + Express ile hızlı ilk yükleme ve güvenli API katmanı'
+  ],
+  highlightsEn: [
+    'Manage quotes, suppliers, and line items together with multi-vendor comparison',
+    'Link customer, stock, pricing, and supplier data via the CariStok matrix',
+    'Role-based authentication with JWT-protected approval workflows',
+    'Advanced filtering, sorting, and export powered by DevExtreme grids',
+    'Versioned data model via Entity Framework Core migrations',
+    'Fast first paint through Angular SSR and a secured ASP.NET Core API layer'
+  ],
+  repoUrl: 'https://github.com/ErkanYigit/TeklifApp',
+  videoUrl: '/videos/teklif-vid.mp4',
+  liveUrl: undefined,
+  images: [
+    '/images/projects/teklif-1.png',
+    '/images/projects/teklif-2.png',
+    '/images/projects/teklif-3.png',
+    '/images/projects/teklif-4.png',
+    '/images/projects/teklif-5.png',
+    '/images/projects/teklif-6.png',
+    '/images/projects/teklif-7.png',
+  ],
+  year: 2025,
+  role: 'Full Stack Developer',
+  featured: true
+}
 ];
 
 // Kategori filtreleri için yardımcı fonksiyonlar
