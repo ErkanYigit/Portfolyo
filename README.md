@@ -256,9 +256,6 @@ npm run build
 2. TypeScript tiplerini tanımlayın
 3. Gerekirse test dosyası oluşturun
 
-## 📄 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ## 🤝 Katkıda Bulunma
 
@@ -270,18 +267,10 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 
 ## 📞 İletişim
 
-- **Email**: erkan@example.com
-- **LinkedIn**: [linkedin.com/in/erkan-yilmaz](https://linkedin.com/in/erkan-yilmaz)
-- **GitHub**: [github.com/erkan-dev](https://github.com/erkan-dev)
-- **Website**: [erkan.dev](https://erkan.dev)
-
-## 🙏 Teşekkürler
-
-- [React](https://reactjs.org/) - UI kütüphanesi
-- [Vite](https://vitejs.dev/) - Build tool
-- [TailwindCSS](https://tailwindcss.com/) - CSS framework
-- [Framer Motion](https://www.framer.com/motion/) - Animasyon kütüphanesi
-- [Lucide](https://lucide.dev/) - İkon kütüphanesi
+- **Email**: erkan.ygt01@gmail.com
+- **LinkedIn**: [linkedin.com/in/erkan-yigit](https://linkedin.com/in/erkan-yigit)
+- **GitHub**: [github.com/erkan-dev](https://github.com/erkanyigit)
+- **Website**: [erkan.dev](https://erkanyigit.me)
 
 ---
 
